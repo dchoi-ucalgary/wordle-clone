@@ -1,0 +1,159 @@
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-right: 10%;
+}
+.navbar li{
+  display: flex;
+  margin-right: 50px;
+  text-decoration: none;
+}
+#darkButt{
+  border: none;
+  border-radius: 100%;
+} 
+#hintButt{
+  border: none;
+  border-radius: 100%;
+}
+#infoButt{
+  border: none;
+  border-radius: 100%;
+}
+#darkButt img{
+  margin: auto;
+  margin-top: 3px;
+  height: 30px;  
+  width: 30px;
+}
+#hintButt img{
+  margin: auto;
+  margin-top: 3px;
+  height: 30px;  
+  width: 30px;
+}
+#infoButt img{
+  margin: auto;
+  margin-top: 3px;
+  height: 30px;  
+  width: 30px;
+}
+
+body{
+  background-color: #122424;
+  color: white;
+
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dark{
+  background-color: #EFEDE5;
+  color: black;
+}
+
+.title{
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  margin: -30px;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#congrats{
+  display: none;
+  justify-content: center;
+  height: 500px;  
+  align-self: center;
+  margin-top: 20px;
+}
+
+#board{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-top: 20px;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: bold;
+  border: 5px solid #bf9000;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.restartButt{
+  display: flex;
+  justify-content: center;
+}
+#reButt{
+    background-color:black;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+}
+#reButt:hover{
+  background-color:#829c79;
+}
+#reButt:active{
+  background-color:black;
+}
+
+#InfoList{
+  display: none;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-left: 15px;
+}
+#InfoList li{
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+#one{
+  display: flex;
+
+  align-items: center;
+  font-size: 100px;
+  font-weight: bold;
+  border: 5px solid #DFFF00;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+footer{
+  display: none;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  height: 50px;
+  background-color: #829c79;
+  width: 100%;
+ }
+#holder{
+  display: flex;
+  margin-top: 15px;
+  font-size: larger;
+  color: white;
+  justify-content: center;
+  align-content: center;
+}

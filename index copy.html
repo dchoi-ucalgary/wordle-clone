@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <script src="./wordle.js"></script>
+
+    <header>
+      <nav class="navbar">
+          <ul class="nav">
+            <li>
+              <button onclick="darkmode()" id="darkButt" onmousedown="event.preventDefault();"><img src="./darkbutton.png" alt="darkbuttonpng"/></button>
+            </li>
+            <li>
+              <button onclick="getHint()" id="hintButt" onmousedown="event.preventDefault();"><img src="./hintbutton.png" alt="hintbuttonpng"/></button>
+            </li>
+            <li>
+              <button onclick="showInfo()" id="infoButt" onmousedown="event.preventDefault();"><img src="./infobutton.png" alt="infobuttonpng"/></button>
+            </li>
+          </ul>
+      </nav>
+    </header>
+
+    <h1 class="title"><strong>Wordle</strong></h1>
+    <section id = "main">
+      <div id="game">
+        <div id="congrats">.<img src="./congrats.gif" alt="congratsgif"/></div>
+        <div id="board">
+            <div class="row">
+              <div class="cell" id="one"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+            </div>
+            <div class="row">
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+            </div>
+            <div class="row">
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+            </div>
+            <div class="row">
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+            </div>
+        </div>
+
+        <div class="restartButt">
+          <button style="text-align: center" id= "reButt" onclick="reset()" onmousedown="event.preventDefault();"><strong>Start Over</strong></button>
+        </div>
+      </div>
+      
+      <div id="Info">
+        <ul id="InfoList">
+          <li>Start typing. The letters will appear in the boxes</li>
+          <li>Remove letters with Backspace</li>
+          <li>Hit <strong>Enter</strong>/<strong>Return</strong> to submit an answer</li>
+          <li>Letters with a Green Background are in the correct location</li>
+          <li>Letters with Yellow Background exist in the word, but are in the wrong spots</li>
+          <li>Letters with a Gray Background do not exist in the word</li>
+          <li>If you need a hint, click the <strong>?</strong> icon</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer id = "foo">
+      <div id= "holder"></div>
+    </footer>
+  </body>
+</html>
